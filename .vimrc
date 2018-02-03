@@ -10,7 +10,12 @@ set smartindent
 set autoindent
 set expandtab
 set tabstop=4
+set autoread
 colorscheme quantum
+" These are for autoload buffer whenever a buffer gains focus
+au FocusGained,BufEnter * :silent! checktime
+au FocusLost,WinLeave * :silent! w
+" This line is to yank the line and not reset the vim clipboard
 xnoremap p pgvy
 " load indent file for the current filetype
 " set the runtime path to include Vundle and initialize
@@ -27,6 +32,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tyrannicaltoucan/vim-quantum'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 
