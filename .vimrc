@@ -33,6 +33,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tyrannicaltoucan/vim-quantum'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'maxmellon/vim-jsx-pretty'
 
 call vundle#end()
 
